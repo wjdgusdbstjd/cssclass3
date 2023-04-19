@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Serif+KR:wght@500;600&display=swap');
+
+/*@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@500;600&display=swap');*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Gowun Dodum', sans-serif;
+    /*font-family: 'Noto Serif KR', serif;*/
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Gowun Dodum', sans-serif;
+    background-color: #644228;
+    overflow-x: hidden;
+    padding-top: 100px;
+}
+
+.logo_a {
+    padding: 15px 20px;
+    text-decoration: none;
+    display: flex;
+}
+.logo_a img{
+    width: 20px;
+    height: 13px;
+    position: relative;
+    top: 29px;
+    left: 5px;
+}
+.logo_a:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(76, 35, 11, 0.578);
+    border-radius: 100vw;
+}
+.lg1{
+    font-size: 36px;
+}
+.lg2{
+    font-size: 30px;
+}
+.lg3{
+    font-size: 26px;
+}
+.lg4{
+    font-size: 22px;
+}
+.lg5{
+    font-size: 18px;
+}
+.lg6{
+    font-size: 15px;
+}
+.lg7{
+    font-size: 12px;
+}
+.lg8{
+    font-size: 6px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #644228;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    border-bottom: 1px solid #A8A885;
+}
+
+header h1 {
+    color: #A8A885;
+    font-size: 8px;
+}
+
+header span {
+    font-size: 35px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #A8A885;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+header .a4 {
+    background-color: rgba(76, 35, 11, 0.578);
+    border-radius: 100vw;
+}
+
+header a:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(76, 35, 11, 0.578);
+    border-radius: 100vw;
+
+}
+
+/*======================================================================*/
+#content2 {
+    margin-top: 100px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px;
+    align-items: center;
+}
+
+.flex-wrapper {
+    display: flex;
+}
+
+.circle p {
+    font-size: 15px;
+    color: #644228;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.block_content1,
+.block_content2,
+.block_content3,
+.block_content4 {
+    margin-bottom: 100px;
+    border: 2px solid #a8a8857f;
+    padding: 20px;
+}
+
+.flex-wrapper img {
+    width: 300px;
+    height: 300px;
+    opacity: 0.9;
+}
+
+.block1,
+.block2,
+/*.block3,*/
+.block4 {
+    width: 300px;
+    height: 300px;
+    background-color: #A8A885;
+}
+
+.block1,
+.block2,
+.block3,
+.block4 {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+.block3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block3 .circle {
+    width: 300px;
+    height: 300px;
+    background-color: #A8A885;
+}
+
+/*============================================================*/
+/*이미지 슬라이드*/
+#slide_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 500px;
+    
+}
+
+.slide_text {
+    color:#A8A885;
+    width: 540px;
+    margin: 70px;
+}
+
+#slide_img img {
+    width: 800px;
+    height: 480px;
+    display: block;
+}
+
+.slider {
+    width: 800px;
+    height: 480px;
+    position: relative;
+    /*margin: 0 auto;*/
+    overflow: hidden;
+    /* 현재 슬라이드 오른쪽에 위치한 나머지 슬라이드 들이 보이지 않도록 가림 */
+}
+
+.slider input[type=radio] {
+    display: none;
+}
+
+ul.imgs {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.imgs li {
+    position: absolute;
+    left: 640px;
+    transition-delay: 1s;
+    /* 새 슬라이드가 이동해 오는 동안 이전 슬라이드 이미지가 배경이 보이도록 지연 */
+
+    padding: 0;
+    margin: 0;
+}
+
+.bullets {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    z-index: 2;
+}
+
+.bullets label {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* 현재 선택된 불릿 배경 흰색으로 구분 표시 */
+.slider input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1) {
+    background-color: #fff;
+}
+
+.slider input[type=radio]:nth-child(2):checked~.bullets>label:nth-child(2) {
+    background-color: #fff;
+}
+
+.slider input[type=radio]:nth-child(3):checked~.bullets>label:nth-child(3) {
+    background-color: #fff;
+}
+
+.slider input[type=radio]:nth-child(4):checked~.bullets>label:nth-child(4) {
+    background-color: #fff;
+}
+
+.slider input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1) {
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.slider input[type=radio]:nth-child(2):checked~ul.imgs>li:nth-child(2) {
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.slider input[type=radio]:nth-child(3):checked~ul.imgs>li:nth-child(3) {
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.slider input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(4) {
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+/*==================================================================*/
+
+.img_autoslide {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.img_box img {
+    width: 300px;
+    height: 220px;
+}
+
+.img_box {
+    width: 4800px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: bannermove 30s linear infinite;
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+.top_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #A8A885;
+    position: absolute;
+    right: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(95, 70, 41, 0.22);
+    color: #644228;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.1s ease-in;
+}
+
+.top_btn:hover {
+    background-color: #898968;
+}
+.logo_a-2 {
+    padding: 15px 20px;
+    text-decoration: none;
+    display: flex;
+    margin-left: 20px;
+}
+.logo_a-2 h1{
+    color: #644228;
+}
+footer ul{
+    color: #644228;
+    margin: 30px;
+    list-style: none;
+    display: flex;
+}
+.logo_a-2 img{
+    width: 20px;
+    height: 13px;
+    position: relative;
+    top: 29px;
+    left: 5px;
+}
+footer {
+    width: 100%;
+    margin-top: 230px;
+    background-color:#898968;
+    display: flex;
+    justify-content: space-between;
+}

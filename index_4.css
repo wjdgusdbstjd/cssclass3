@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Serif+KR:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Gowun Dodum', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Gowun Dodum', sans-serif;
+    background-color: #644228;
+    overflow-x: hidden;
+}
+
+.logo_a {
+    padding: 15px 20px;
+    text-decoration: none;
+    display: flex;
+}
+.logo_a img{
+    width: 20px;
+    height: 13px;
+    position: relative;
+    top: 29px;
+    left: 5px;
+}
+
+.logo_a:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(76, 35, 11, 0.578);
+    border-radius: 100vw;
+}
+.lg1{
+    font-size: 36px;
+}
+.lg2{
+    font-size: 30px;
+}
+.lg3{
+    font-size: 26px;
+}
+.lg4{
+    font-size: 22px;
+}
+.lg5{
+    font-size: 18px;
+}
+.lg6{
+    font-size: 15px;
+}
+.lg7{
+    font-size: 12px;
+}
+.lg8{
+    font-size: 6px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #644228;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border-bottom: 1px solid #A8A885;
+}
+
+header h1 {
+    color: #A8A885;
+}
+
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #A8A885;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+header .a3 {
+    background-color: rgba(76, 35, 11, 0.578);
+    border-radius: 100vw;
+}
+
+header a:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(76, 35, 11, 0.578);
+    border-radius: 100vw;
+}
+
+#content1 {
+    padding-top: 120px;
+    height: 500px;
+}
+/*=============================================================*/
+.first_txt{
+    display: flex;
+    justify-content: center;
+    color: #A8A885;
+}
+.preview {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.preview img {
+    display: block;
+    width: 250px;
+    height: 350px;
+    transition: all 0.4s ease-in;
+    margin: 30px;
+    opacity: 0.9;
+    z-index: 2;
+}
+.preview a{
+    text-decoration: none;
+    color: #A8A885;
+}
+.preview1,
+.preview2,
+.preview3,
+.preview4{
+    display: block;
+}
+.preview1 p,
+.preview2 p,
+.preview3 p,
+.preview4 p{
+    text-align: center;
+    color: #A8A885;
+    margin-bottom: 30px;;
+}
+.preview1 p:hover,
+.preview2 p:hover,
+.preview3 p:hover,
+.preview4 p:hover{
+    color: rgb(196, 177, 151);
+    border-bottom:2px solid rgb(196, 177, 151);
+    
+}
+.img1:hover {
+    transform: translateY(-35px);
+}
+
+.img2:hover {
+    transform: translateY(-25px);
+}
+
+.img3:hover {
+    transform: translateY(-25px);
+}
+
+.img4:hover {
+    /*padding-bottom: 50px;  이 코드때문에 이미지에 호버시 텍스트 위치도 이동하였다*/
+    transform: translateY(-25px);
+}
+/*=================================================================*/
+.real_content {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+.first,
+.second,
+.third,
+.fourth{
+    margin: 130px;
+}
+.real_content .first,
+.real_content .second,
+.real_content .third,
+.real_content .fourth {
+    display: flex;
+    justify-content: center;
+}
+
+.real_content img {
+    width: 500px;
+    margin: 20px;
+}
+.real_content .p1 {
+    color: #A8A885;
+    width: 600px;
+    margin-top: 40px;
+    transition: all 0.4s ease-in;
+}
+.real_content .p2 {
+    color: #A8A885;
+    width: 600px;
+    margin-top: 70px;
+    transition: all 0.4s ease-in;
+}
+.real_content .p3 {
+    color: #A8A885;
+    width: 600px;
+    margin-top: 100px;
+    transition: all 0.4s ease-in;
+}
+.real_content .p4 {
+    color: #A8A885;
+    width: 600px;
+    margin-top: 90px;
+    transition: all 0.4s ease-in;
+}
+.p1:hover{
+    color:rgba(76, 35, 11, 0.578);
+    background-color: rgb(221, 221, 197);
+    border-radius: 30px;
+    padding: 20px 20px 0 20px;
+}
+.p2:hover{
+    color:rgba(76, 35, 11, 0.578);
+    background-color: rgb(221, 221, 197);
+    border-radius: 30px;
+    padding: 20px 20px 0 20px;
+}
+.p3:hover{
+    color:rgba(76, 35, 11, 0.578);
+    background-color: rgb(221, 221, 197);
+    border-radius: 30px;
+    padding: 20px 20px 0 20px;
+}
+.p4:hover{
+    color:rgba(76, 35, 11, 0.578);
+    background-color: rgb(221, 221, 197);
+    border-radius: 30px;
+    padding: 20px 20px 0 20px;
+}
+.top_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #A8A885;
+    position: absolute;
+    right: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(95, 70, 41, 0.22);
+    color: #644228;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.1s ease-in;
+}
+
+.top_btn:hover {
+    background-color: #898968;
+}
+.logo_a-2 {
+    padding: 15px 20px;
+    text-decoration: none;
+    display: flex;
+    margin-left: 20px;
+}
+.logo_a-2 h1{
+    color: #644228;
+}
+footer ul{
+    color: #644228;
+    margin: 30px;
+    list-style: none;
+    display: flex;
+}
+.logo_a-2 img{
+    width: 20px;
+    height: 13px;
+    position: relative;
+    top: 29px;
+    left: 5px;
+}
+footer {
+    width: 100%;
+    margin-top: 130px;
+    background-color:#898968;
+    display: flex;
+    justify-content: space-between;
+}
+

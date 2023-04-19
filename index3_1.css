@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Serif+KR:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Gowun Dodum', sans-serif;
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Gowun Dodum', sans-serif;
+    background-color: #644228;
+    overflow-x: hidden;
+}
+.logo_a {
+    padding: 15px 20px;
+    text-decoration: none;
+    display: flex;
+}
+.logo_a img{
+    width: 20px;
+    height: 13px;
+    position: relative;
+    top: 29px;
+    left: 5px;
+}
+.logo_a:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(76, 35, 11, 0.578);
+    border-radius: 100vw;
+}
+.lg1{
+    font-size: 36px;
+}
+.lg2{
+    font-size: 30px;
+}
+.lg3{
+    font-size: 26px;
+}
+.lg4{
+    font-size: 22px;
+}
+.lg5{
+    font-size: 18px;
+}
+.lg6{
+    font-size: 15px;
+}
+.lg7{
+    font-size: 12px;
+}
+.lg8{
+    font-size: 6px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #644228;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border-bottom: 1px solid #A8A885 ;
+}
+header h1 {
+    color: #A8A885;
+}
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #A8A885;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+header .a2{
+    background-color: rgba(76, 35, 11, 0.578);
+    border-radius: 100vw;
+}
+header a:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(76, 35, 11, 0.578);
+    border-radius: 100vw;
+
+}
+/*===========================================================================*/
+#contents{
+    font-family: 'Gowun Dodum', sans-serif;
+}
+#menu{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+#menu nav{
+    display: flex;
+}
+#menu ul li{
+    display: flex;
+    margin: 20px;
+}
+#menu a{
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    text-decoration: none;
+    background-color: #a8a885aa;
+    color: #644228;
+    font-size: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(95, 70, 41, 0.22);
+    transition: all .2s ease-in-out;
+}
+#menu .this{
+    background-color: #A8A885;
+}
+#menu a:hover{
+    transform: scale(1.2);
+}
+/*===========================================================================*/
+.card_top{
+    display: flex;
+    justify-content: center;
+}
+.card_bottom{
+    display: flex;
+    justify-content: center;
+}
+#contents{
+    padding-top: 92px;
+}
+.content_1 {
+    margin-top: 150px;
+    position: relative;
+    width: 400px;
+    margin: 40px;
+}
+.image {
+    display: block;
+    width: 400px;
+    height: 500px;
+}
+
+.textbox_1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: .4s ease;
+    background-color:#ECE2D9;
+}
+.textbox_1 h3{
+    font-size: 20px;
+    color: #A8A885;
+}
+.p_1{
+    font-size: 15px;
+    color: #A8A885;
+}
+.p_2{
+    width: 330px;
+    font-size: 15px;
+    color: #A8A885;
+    margin-top: 70px;
+}
+.content_1:hover .textbox_1 {
+    opacity: 1;
+}
+
+.text_1 {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: verdana, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.top_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #A8A885;
+    position: absolute;
+    right: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(95, 70, 41, 0.22);
+    color: #644228;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.1s ease-in;
+}
+
+.top_btn:hover {
+    background-color: #898968;
+}
+.logo_a-2 {
+    padding: 15px 20px;
+    text-decoration: none;
+    display: flex;
+    margin-left: 20px;
+}
+.logo_a-2 h1{
+    color: #644228;
+}
+footer ul{
+    color: #644228;
+    margin: 30px;
+    list-style: none;
+    display: flex;
+}
+.logo_a-2 img{
+    width: 20px;
+    height: 13px;
+    position: relative;
+    top: 29px;
+    left: 5px;
+}
+footer {
+    width: 100%;
+    margin-top: 130px;
+    background-color:#898968;
+    display: flex;
+    justify-content: space-between;
+}

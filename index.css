@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Serif+KR:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+    height: 100%;
+    height: 900px;
+}
+
+body {
+    font-family: 'Gowun Dodum', sans-serif;
+    background-color: #644228;
+    overflow-x: hidden;
+    height: 900px;
+}
+
+.logo_a {
+    padding: 15px 20px;
+    text-decoration: none;
+    display: flex;
+}
+.logo_a img{
+    width: 20px;
+    height: 13px;
+    position: relative;
+    top: 29px;
+    left: 5px;
+}
+.logo_a:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(76, 35, 11, 0.578);
+    border-radius: 100vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #644228;
+    width: 100%;
+}
+
+header h1 {
+    color: #A8A885;
+}
+
+/*header span {
+    font-size: 35px;
+}*/
+.lg1{
+    font-size: 36px;
+}
+.lg2{
+    font-size: 30px;
+}
+.lg3{
+    font-size: 26px;
+}
+.lg4{
+    font-size: 22px;
+}
+.lg5{
+    font-size: 18px;
+}
+.lg6{
+    font-size: 15px;
+}
+.lg7{
+    font-size: 12px;
+}
+.lg8{
+    font-size: 6px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #A8A885;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+header a:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(76, 35, 11, 0.578);
+    border-radius: 100vw;
+}
+
+.main {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.main span {
+    color: #A8A885;
+    text-align: right;
+    padding: 10px;
+    font-size: 30px;
+}
+.main span:hover{
+    background: linear-gradient(to top, #66664a 50%, transparent 50%);
+}
+.main p {
+    color: #A8A885;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.hr-3 {
+    border: 0;
+    height: 0;
+    border-top: 1px solid #A8A885;
+}
+
+.v-line {
+    border-left: 1px solid #A8A885;
+    height: 200px;
+    position: fixed;
+    left: 200px;
+}
+
+/*=============================================================*/
+.clip_section {
+    height: 200px;
+    z-index: 2;
+}
+
+.clip_menu {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.clip_menu a {
+    text-decoration: none;
+    color: #A8A885;
+}
+
+.clip_menu p {
+    color: #A8A885;
+}
+
+/*=============================================================*/
+.has1 {
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.has1 a {
+    width: 80px;
+    border: 1px solid #A8A885;
+    padding: 10px 30px;
+    background-color: #A8A885;
+    color: #644228;
+    
+}
+
+.sub1 {
+    width: 1000px;
+    margin-top: 10px;
+    background-color: #d1d1ac;
+    border-radius: 30px;
+    margin-left: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(95, 70, 41, 0.22);
+    z-index: 2;
+}
+.sub1 p{
+    color:#644228;
+}
+
+.has1 .sub1 {
+    display: none;
+}
+
+/*마우스 커서를 갖다 대면 서브메뉴가 보이도록 설정*/
+.has1:hover .sub1 {
+    display: block;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/*====================================================*/
+.has2 {
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    left: 120px;
+}
+
+.has2 a {
+    width: 80px;
+    border: 1px solid #A8A885;
+    padding: 10px 30px;
+}
+
+.sub2 {
+    width: 1000px;
+    margin-top: 10px;
+    background-color: #d1d1ac;
+    border-radius: 30px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(95, 70, 41, 0.22);
+    z-index: 2;
+}
+.sub2 p{
+    color:#644228;
+}
+
+.has2 .sub2 {
+    display: none;
+}
+
+/*마우스 커서를 갖다 대면 서브메뉴가 보이도록 설정*/
+.has2:hover .sub2 {
+    display: block;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/*=============================================================*/
+
+.has3 {
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    left: 240px;
+}
+
+.has3 a {
+    width: 80px;
+    border: 1px solid #A8A885;
+    padding: 10px 30px;
+    background-color: #A8A885;
+    color: #644228;
+}
+
+.sub3 {
+    width: 1000px;
+    margin-top: 10px;
+    background-color: #d1d1ac;
+    border-radius: 30px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(95, 70, 41, 0.22);
+    z-index: 2;
+}
+.sub3 p{
+    color:#644228;
+}
+.has3 .sub3 {
+    display: none;
+}
+
+/*마우스 커서를 갖다 대면 서브메뉴가 보이도록 설정*/
+.has3:hover .sub3 {
+    display: block;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/*=============================================================*/
+.has4 {
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    left: 360px;
+}
+
+.has4 a {
+    width: 80px;
+    border: 1px solid #A8A885;
+    padding: 10px 30px;
+}
+
+.sub4 {
+    width: 1000px;
+    margin-top: 10px;
+    background-color: #d1d1ac;
+    border-radius: 30px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(95, 70, 41, 0.22);
+    z-index: 2;
+}
+.sub4 p{
+    color:#644228;
+}
+.has4 .sub4 {
+    display: none;
+}
+
+/*마우스 커서를 갖다 대면 서브메뉴가 보이도록 설정*/
+.has4:hover .sub4 {
+    display: block;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/*=============================================================*/
+.has5 {
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    left: 480px;
+}
+
+.has5 a {
+    width: 80px;
+    border: 1px solid #A8A885;
+    padding: 10px 30px;
+    background-color: #A8A885;
+    color: #644228;
+}
+
+.sub5 {
+    width: 1000px;
+    margin-top: 10px;
+    background-color: #d1d1ac;
+    border-radius: 30px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(95, 70, 41, 0.22);
+    z-index: 2;
+}
+.sub5 p{
+    color:#644228;
+}
+
+.has5 .sub5 {
+    display: none;
+}
+
+/*마우스 커서를 갖다 대면 서브메뉴가 보이도록 설정*/
+.has5:hover .sub5 {
+    display: block;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.clip_menu img {
+    width: 200px;
+    margin: 20px;
+}
+
+/*=============================================================*/
+.main_image img{
+    position: absolute;
+    width: 100%;
+    height:700px;
+}
+
